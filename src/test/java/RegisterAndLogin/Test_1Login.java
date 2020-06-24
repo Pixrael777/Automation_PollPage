@@ -15,19 +15,16 @@ public class Test_1Login {
 	
 	@Before
 	public void setUp() throws Exception {
-		System.out.println("before");
+		
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\pc\\Downloads\\Programas descargados\\Driver\\Chrome\\chromedriver_win32\\chromedriver.exe");
 		String url = "https://pixrael.github.io/My-Poll-Project/#/dashboard"; 
-		System.out.println(url);
+		
 		driver = new ChromeDriver();
 		driver.get(url);
 		
-		String titleLogin = driver.getTitle(); 
-		System.out.println("Title login = " + titleLogin);
 		
-		
-		 
+	
 		
 	}
 	
@@ -43,7 +40,6 @@ public class Test_1Login {
 		 System.out.println(pass);
 		 driver.findElement(By.id("mat-input-6")).sendKeys(pass);
 		 
-		 // Click on button Access 
 		 
 		 WebElement buttonAccess = driver.findElement(By.xpath("/html/body/app-root/app-admin-layout/div/div[2]/app-notifications/div/div/div/div[2]/div/div/form/div/button")); 
 		 buttonAccess.click();
@@ -67,7 +63,7 @@ public class Test_1Login {
 		 String mail = "admingmail.com"; 
 		 System.out.println(mail);
 		 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-		 //Thread.sleep(3000);
+		 
 		 
 		 String pass = "1234"; 
 		 System.out.println(pass);
@@ -88,7 +84,7 @@ public class Test_1Login {
 	 String mail = ".mysite@mysite.org"; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -109,7 +105,7 @@ public class Test_1Login {
 	 String mail = "@you.me.net"; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -130,7 +126,7 @@ public class Test_1Login {
 	 String mail = "mysite123@gmail.b"; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	 
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -151,7 +147,7 @@ public class Test_1Login {
 	 String mail = "mysite@.org.org"; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -172,7 +168,7 @@ public class Test_1Login {
 	 String mail = "mysite()*@gmail.com"; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	 
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -193,7 +189,7 @@ public class Test_1Login {
 	 String mail = "mysite..1234@yahoo.com"; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	 
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -214,7 +210,7 @@ public class Test_1Login {
 	 String mail = "aaaaa"; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -235,7 +231,7 @@ public class Test_1Login {
 	 String mail = "123445"; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -256,7 +252,7 @@ public class Test_1Login {
 	 String mail = "abc123445"; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -277,7 +273,7 @@ public class Test_1Login {
 	 String mail = "*****"; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	 
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -298,7 +294,7 @@ public class Test_1Login {
 	 String mail = "admin@gmail."; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -319,7 +315,7 @@ public class Test_1Login {
 	 String mail = "@gmail."; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -340,7 +336,7 @@ public class Test_1Login {
 	 String mail = "@.com"; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -361,7 +357,7 @@ public class Test_1Login {
 	 String mail = ""; 
 	 System.out.println(mail);
 	 driver.findElement(By.id("mat-input-5")).sendKeys(mail);
-	 //Thread.sleep(3000);
+	 
 	 
 	 String pass = "1234"; 
 	 System.out.println(pass);
@@ -377,7 +373,7 @@ public class Test_1Login {
 	
 	@After
 	public void tearDown() throws Exception {
-		//driver.close();
+		driver.close();
 	}
 
 	
