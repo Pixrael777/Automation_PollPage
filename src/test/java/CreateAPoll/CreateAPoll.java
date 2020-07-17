@@ -16,7 +16,7 @@ public class CreateAPoll {
 	@Before
 	public void setUp() throws InterruptedException {
 
-		System.out.println("Flag1");
+		
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\pc\\Downloads\\Programas descargados\\Driver\\Chrome\\chromedriver_win32\\chromedriver.exe");
 
@@ -64,7 +64,7 @@ public class CreateAPoll {
 		WebElement buttonCreatePoll = driver.findElement(By
 				.xpath("/html/body/app-root/app-admin-layout/div/div[2]/app-dashboard/div/div/div[3]/div/div/button"));
 
-		System.out.println("Before click");
+		
 
 		// 1. Write on field Name a poll
 
@@ -73,11 +73,11 @@ public class CreateAPoll {
 		inputNamePoll.sendKeys(NameAPoll);
 
 		Boolean buttonEnable = buttonCreatePoll.isEnabled();
-		System.out.println("The button is " + buttonEnable);
+		
 
 		// Thread.sleep(3000);
 
-		System.out.println("Here button must is enable");
+		
 
 		Assert.assertTrue(buttonEnable);
 
@@ -97,7 +97,7 @@ public class CreateAPoll {
 		WebElement buttonCreatePoll = driver.findElement(By
 				.xpath("/html/body/app-root/app-admin-layout/div/div[2]/app-dashboard/div/div/div[3]/div/div/button"));
 
-		System.out.println("Before click");
+
 
 		// 3. Write on field Name a poll
 
@@ -108,10 +108,7 @@ public class CreateAPoll {
 		// 4. Verify if button is enable
 
 		Boolean buttonEnable = buttonCreatePoll.isEnabled();
-		System.out.println("The button is enable = " + buttonEnable);
-
-		System.out.println("Here button must isn`t enable");
-
+	
 		Assert.assertFalse(buttonEnable);
 	}
 
@@ -127,7 +124,7 @@ public class CreateAPoll {
 		WebElement buttonCreatePoll = driver.findElement(By
 				.xpath("/html/body/app-root/app-admin-layout/div/div[2]/app-dashboard/div/div/div[3]/div/div/button"));
 
-		System.out.println("Before click");
+		
 
 		// 3. Write on field Name a poll
 
@@ -138,11 +135,9 @@ public class CreateAPoll {
 		// 4. Verify if button is enable
 
 		Boolean buttonEnable = buttonCreatePoll.isEnabled();
-		System.out.println("The button is enable = " + buttonEnable);
 
-		System.out.println("Here button must isn`t enable");
 
-		Assert.assertFalse(buttonEnable);
+				Assert.assertFalse(buttonEnable);
 	}
 
 	@Test
@@ -162,7 +157,7 @@ public class CreateAPoll {
 		WebElement buttonCreatePoll = driver.findElement(By
 				.xpath("/html/body/app-root/app-admin-layout/div/div[2]/app-dashboard/div/div/div[3]/div/div/button"));
 
-		System.out.println("Before click");
+		
 
 		// 3. Write on field Name a poll
 
@@ -173,9 +168,7 @@ public class CreateAPoll {
 		// 4. Verify if button is enable
 
 		Boolean buttonEnable = buttonCreatePoll.isEnabled();
-		System.out.println("The button is enable = " + buttonEnable);
-
-		System.out.println("Here button must isn`t enable");
+		
 
 		Assert.assertFalse(buttonEnable);
 	}
@@ -197,7 +190,7 @@ public class CreateAPoll {
 		WebElement buttonCreatePoll = driver.findElement(By
 				.xpath("/html/body/app-root/app-admin-layout/div/div[2]/app-dashboard/div/div/div[3]/div/div/button"));
 
-		System.out.println("Before click");
+		
 
 		// 3. Write on field Name a poll
 
@@ -208,9 +201,9 @@ public class CreateAPoll {
 		// 4. Verify if button is enable
 
 		Boolean buttonEnable = buttonCreatePoll.isEnabled();
-		System.out.println("The button is enable = " + buttonEnable);
+		
 
-		System.out.println("Here button must is enable");
+		
 
 		Assert.assertTrue(buttonEnable);
 	}
@@ -232,7 +225,7 @@ public class CreateAPoll {
 		WebElement buttonCreatePoll = driver.findElement(By
 				.xpath("/html/body/app-root/app-admin-layout/div/div[2]/app-dashboard/div/div/div[3]/div/div/button"));
 
-		System.out.println("Before click");
+		
 
 		// 3. Write on field Name a poll
 
@@ -243,10 +236,7 @@ public class CreateAPoll {
 		// 4. Verify if button is enable
 
 		Boolean buttonEnable = buttonCreatePoll.isEnabled();
-		System.out.println("The button is enable = " + buttonEnable);
-
-		System.out.println("Here button must is enable");
-
+		
 		Assert.assertTrue(buttonEnable);
 	}
 
@@ -267,7 +257,7 @@ public class CreateAPoll {
 		WebElement buttonCreatePoll = driver.findElement(By
 				.xpath("/html/body/app-root/app-admin-layout/div/div[2]/app-dashboard/div/div/div[3]/div/div/button"));
 
-		System.out.println("Before click");
+		
 
 		// 3. Write on field Name a poll
 
@@ -278,9 +268,7 @@ public class CreateAPoll {
 		// 4. Verify if button is enable
 
 		Boolean buttonEnable = buttonCreatePoll.isEnabled();
-		System.out.println("The button is enable = " + buttonEnable);
-
-		System.out.println("Here button must isn`t enable");
+		
 
 		Assert.assertFalse(buttonEnable);
 	}
@@ -302,8 +290,7 @@ public class CreateAPoll {
 		WebElement buttonCreatePoll = driver.findElement(By
 				.xpath("/html/body/app-root/app-admin-layout/div/div[2]/app-dashboard/div/div/div[3]/div/div/button"));
 
-		System.out.println("Before click");
-
+		
 		// 3. Write on field Name a poll
 
 		String NameAPoll = "1 My poll\t";
@@ -313,9 +300,7 @@ public class CreateAPoll {
 		// 4. Verify if button is enable
 
 		Boolean buttonEnable = buttonCreatePoll.isEnabled();
-		System.out.println("The button is enable = " + buttonEnable);
-
-		System.out.println("Here button must isn`t enable");
+		
 
 		Assert.assertFalse(buttonEnable);
 	}
@@ -337,7 +322,7 @@ public class CreateAPoll {
 		WebElement buttonCreatePoll = driver.findElement(By
 				.xpath("/html/body/app-root/app-admin-layout/div/div[2]/app-dashboard/div/div/div[3]/div/div/button"));
 
-		System.out.println("Before click");
+		
 
 		// 3. Write on field Name a poll
 
@@ -348,9 +333,8 @@ public class CreateAPoll {
 		// 4. Verify if button is enable
 
 		Boolean buttonEnable = buttonCreatePoll.isEnabled();
-		System.out.println("The button is enable = " + buttonEnable);
-
-		System.out.println("Here button must isn`t enable");
+		
+		
 
 		Assert.assertFalse(buttonEnable);
 	}
@@ -372,7 +356,7 @@ public class CreateAPoll {
 		WebElement buttonCreatePoll = driver.findElement(By
 				.xpath("/html/body/app-root/app-admin-layout/div/div[2]/app-dashboard/div/div/div[3]/div/div/button"));
 
-		System.out.println("Before click");
+	
 
 		// 3. Write on field Name a poll
 
@@ -383,9 +367,7 @@ public class CreateAPoll {
 		// 4. Verify if button is enable
 
 		Boolean buttonEnable = buttonCreatePoll.isEnabled();
-		System.out.println("The button is enable = " + buttonEnable);
-
-		System.out.println("Here button must isn`t enable");
+		
 
 		Assert.assertFalse(buttonEnable);
 	}
@@ -395,7 +377,7 @@ public class CreateAPoll {
 	@After
 	public void End() {
 		driver.close();
-		System.out.println("Flag3");
+	
 
 	}
 
